@@ -1,0 +1,196 @@
+
+
+import java.util.Scanner; 
+
+public class Main {
+  public static void main(String[] args) {
+   
+    Scanner scanner = new Scanner(System.in);// opening a chanel 
+
+    int number; 
+
+    number = scanner.nextInt(); 
+
+    //int number = 7; // this is called hard coded because we write the value in the code
+
+   // scanner.nextInt(); // waits for us to proovide an integer
+   // scanner.nextLine(); // waits for us to provide a string until pressed enter
+    
+    System.out.println("This is the provided number:" + number);
+
+    scanner.close(); // we are closing he chanell, we are deleting the chaanel so it is not available anymore.   In more larger programms it is very important to take care of the recourses that we use and we have to close the programms we are not using anymore. 
+
+
+import java.util.Scanner; 
+
+public class Main {
+  public static void main(String[] args) {
+   
+    Scanner scanner = new Scanner(System.in);// opening a chanel 
+    System.out.println("Write a number: ");
+    int a = scanner.nextInt();
+    System.out.println("Write another number: ");
+    int b = scanner.nextInt();
+    System.out.println("A sum of A and B is: " + (a + b));
+
+    scanner.close(); // we are closing he chanell, we are deleting the chaanel so it is not available anymore.   In more larger programms it is very important to take care of the recourses that we use and we have to close the programms we are not using anymore.
+
+
+import java.util.Scanner; 
+
+public class Main {
+  public static void main(String[] args) {
+   
+    Scanner scanner = new Scanner(System.in);// opening a chanel 
+    System.out.println("Hello world!");
+
+    //repeated action = loops 
+    int amountOfTimesToDuck = 10; 
+    while (amountOfTimesToDuck != 0) {// here we are providing a condition - while we do not reach zero we are doing this action
+       System.out.println("Duck!");
+      amountOfTimesToDuck = amountOfTimesToDuck - 1;
+    }
+
+
+import java.util.Scanner; 
+
+public class Main {
+  public static void main(String[] args) {
+   
+    Scanner scanner = new Scanner(System.in);// opening a chanel 
+    System.out.println("Hello world!");
+
+    //repeated action = loops 
+    int amountOfTimesToDuck = 10; 
+    while (amountOfTimesToDuck != 0) {// here we are providing a condition - while we do not reach zero we are doing this action; In this case while is continue running until this statement is not true anymore 
+       System.out.println(amountOfTimesToDuck);
+      amountOfTimesToDuck = amountOfTimesToDuck - 1; // doing this endlessly until the conditions of a while loop is fulfilled  
+    }
+  
+    
+  }
+}import java.util.Scanner; 
+
+public class Main {
+  public static void main(String[] args) {
+   
+    Scanner scanner = new Scanner(System.in);// opening a chanel 
+    System.out.println("Hello world!");
+
+    int i = 0; 
+    while (i < 10) {// here we are providing a condition - while we do not reach zero we are doing this action; In this case while is continue running until this statement is not true anymore 
+       System.out.println(i);  
+      i = i + 1; // this is the same as i++
+      
+    }
+
+import java.util.Scanner; 
+
+public class Main {
+  public static void main(String[] args) {
+   
+    Scanner scanner = new Scanner(System.in);// opening a chanel 
+    System.out.println("Hello world!");
+
+    int i = 1; //First number is 1
+    boolean isEven = false; //The first number is always odd
+
+    // if isEven true for the second number
+    // counts from 0 to 10
+    // Provides wether or not the number is even or odd
+    
+    while (i <= 10) {
+      String result = ""; // we are adding a value to this specific string, to this variable based on the conditions that we have in the statement below. 
+      if(isEven == true){
+        result = "even";
+      }else{
+        result = "odd";
+      }
+       System.out.println(i + " " + result);  
+      i = i + 1; // this is the same as i++
+      isEven = !isEven; // if we do an if statement where we are checking isEven
+      // isEven = true -> isEven = false
+      // isEven = false -> isEven = true
+    }
+  
+    
+  }
+}
+
+import java.util.Scanner; 
+
+public class Main {
+  public static void main(String[] args) {
+   
+    Scanner scanner = new Scanner(System.in);// opening a chanel 
+    System.out.println("Hello world!");
+
+    int i = 1; 
+    // counts from 0 to 10
+    // Provides wether or not the number is even or odd
+    
+    while (i <= 10) {
+      String result = ""; // defining a variable which is result
+      if(i % 2 == 0 ) { // testing if odd or even 
+        result = "even";
+      }else{
+        result = "odd";
+      }
+       System.out.println(i + " " + result);  
+      i = i + 1; 
+     
+    }
+  
+    
+  }
+}
+  
+
+
+
+import java.util.Scanner; 
+
+public class Main {
+  public static void main(String[] args) {
+   
+    Scanner scanner = new Scanner(System.in);// opening a chanel 
+    /*System.out.println("Hello world!");
+
+    int i = 1; 
+      
+    while (i <= 10) {
+      
+       System.out.println(i);  
+      i = i + 1; 
+     
+    }*/ 
+    // int i = 1; Defined at the start
+    for (int  i = 1; i <= 10; i = i + 1 ){
+      System.out.println(i);
+    }
+    // definējam i, i <= 10 - then we are providing a condition before on what condition are we gonna go through the loop, and the we are going to provide an action, what kind of an action are we gonna do at the end of every loop
+  }
+}
+  
+  
+
+
+
+  
+    
+  }
+}
+  
+  
+
+
+  
+    
+  }
+}
+   
+  }
+}
+  
+  }
+}
