@@ -194,3 +194,26 @@ public class Main {
   
   }
 }
+
+```ja
+import java.util.Scanner; 
+
+public class Main {
+  public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Please, write how many stories will your pyramid have: ");
+    int stories = scanner.nextInt();
+
+
+    for (int  i = 1; i <= stories; i= i + 1 ){
+      for (int j = 1; j <= i; j = j + 1){
+       System.out.print("_"); 
+      }
+      System.out.println(); 
+    }
+    scanner.close(); 
+  }
+}
+
+``` 
