@@ -217,3 +217,33 @@ public class Main {
 }
 
 ``` 
+
+  ##4.nedēļas nodarbības uzdevums - Random Number Guessing game - uztaisīju ar IF/else if/else statementiem
+
+import java.util.Scanner; 
+
+public class Main {
+  public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Guess a  number between 0 and 100: ");
+    
+    int randomNumber = scanner.nextInt();
+
+    int i = 72; 
+    if (randomNumber == i) {
+    System.out.print("You guessed the correct number!");
+      }else if (randomNumber > i){
+        System.out.print("Your guess is too high!");
+      }else{
+        System.out.print("Your guess is too low!");
+      }
+    scanner.close(); 
+
+      
+       
+    
+  }
+}
+
+
